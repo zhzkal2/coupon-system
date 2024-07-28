@@ -20,19 +20,5 @@ public class CouponCreateProducer {
         kafkaTemplate.send("coupon_create",userId);
 
     }
-//    public void create(Long userId) {
-//        ListenableFuture<SendResult<String, Long>> future = (ListenableFuture<SendResult<String, Long>>) kafkaTemplate.send("coupon_create", userId);
-//
-//        future.addCallback(new ListenableFutureCallback<SendResult<String, Long>>() {
-//            @Override
-//            public void onSuccess(SendResult<String, Long> result) {
-//                System.out.println("Message sent successfully: " + result.getProducerRecord().value());
-//            }
-//
-//            @Override
-//            public void onFailure(Throwable ex) {
-//                System.err.println("Failed to send message: " + ex.getMessage());
-//            }
-//        });
-//    }
+
 }

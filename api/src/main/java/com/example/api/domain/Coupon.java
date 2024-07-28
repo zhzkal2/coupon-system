@@ -8,18 +8,19 @@ import jakarta.persistence.Id;
 @Entity
 public class Coupon {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
-    private long userId;
+    private Long userId;
+
 
     public Coupon(){
     }
 
-    public Coupon(long userId) {
+    public Coupon(Long userId) {
         this.userId=userId;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
